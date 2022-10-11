@@ -21,6 +21,7 @@
                         <li>{{ Auth::user()->email; }}</li>
                         <li>{{ Auth::user()->shop_number; }}</li>
                     </ul>
+                    <p class="text-green-700 text-right">てすと</p>
                 </div>
             </div>
         </div>
