@@ -11,7 +11,7 @@
 
             <!-- Name -->
             <div>
-                <x-input-label for="name" :value="__('店名')" />
+                <x-input-label for="name" :value="__('Shop Name')" />
 
                 <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
 
@@ -29,7 +29,7 @@
 
             <!--  -->
             <div class="mt-4">
-                <x-input-label for="shop_number" :value="__('店番')" />
+                <x-input-label for="shop_number" :value="__('Shop Number')" />
 
                 <x-text-input id="shop_number" class="block mt-1 w-full" type="text" name="shop_number" :value="old('shop_number')" required />
 
@@ -38,7 +38,7 @@
 
             <!-- Password -->
             <div class="mt-4">
-                <x-input-label for="password" :value="__('パスワード')" />
+                <x-input-label for="password" :value="__('Password')" />
 
                 <x-text-input id="password" class="block mt-1 w-full"
                                 type="password"
@@ -50,7 +50,7 @@
 
             <!-- Confirm Password -->
             <div class="mt-4">
-                <x-input-label for="password_confirmation" :value="__('パスワード(確認用)')" />
+                <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
 
                 <x-text-input id="password_confirmation" class="block mt-1 w-full"
                                 type="password"
