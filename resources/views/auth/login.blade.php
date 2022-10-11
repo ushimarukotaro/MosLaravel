@@ -12,14 +12,21 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
-            <!-- Email Address -->
+            <!-- shop Number -->
             <div>
-                <x-input-label for="email" :value="__('Email')" />
+                <x-input-label for="shop_number" :value="__('店番')" />
+
+                <x-text-input id="shop_number" class="block mt-1 w-full" type="text" name="shop_number" :value="old('shop_number')" required autofocus />
+
+                <x-input-error :messages="$errors->get('shop_number')" class="mt-2" />
+            </div>
+            {{-- <div>
+                <x-input-label for="email" :value="__('メールアドレス')" />
 
                 <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
 
                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
-            </div>
+            </div> --}}
 
             <!-- Password -->
             <div class="mt-4">
